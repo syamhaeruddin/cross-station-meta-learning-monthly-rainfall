@@ -1,0 +1,131 @@
+Station,Season,Family,Weight
+Darwin,wet,Statistical (SARIMA),0.338
+Katherine,wet,Statistical (SARIMA),0.354
+Broome,wet,Statistical (SARIMA),0.373
+Cairns,wet,Statistical (SARIMA),0.281
+Innisfail,wet,Statistical (SARIMA),0.246
+Tully,wet,Statistical (SARIMA),0.266
+Brisbane,wet,Statistical (SARIMA),0.274
+Alice_Springs,wet,Statistical (SARIMA),0.391
+Woomera,wet,Statistical (SARIMA),0.358
+Birdsville,wet,Statistical (SARIMA),0.371
+Perth,wet,Statistical (SARIMA),0.247
+Adelaide,wet,Statistical (SARIMA),0.202
+Hobart,wet,Statistical (SARIMA),0.185
+Darwin,wet,Machine learning,0.089
+Katherine,wet,Machine learning,0.088
+Broome,wet,Machine learning,0.101
+Cairns,wet,Machine learning,0.074
+Innisfail,wet,Machine learning,0.091
+Tully,wet,Machine learning,0.073
+Brisbane,wet,Machine learning,0.116
+Alice_Springs,wet,Machine learning,0.129
+Woomera,wet,Machine learning,0.174
+Birdsville,wet,Machine learning,0.155
+Perth,wet,Machine learning,0.183
+Adelaide,wet,Machine learning,0.262
+Hobart,wet,Machine learning,0.235
+Darwin,wet,Deep learning,0.07
+Katherine,wet,Deep learning,0.066
+Broome,wet,Deep learning,0.047
+Cairns,wet,Deep learning,0.091
+Innisfail,wet,Deep learning,0.068
+Tully,wet,Deep learning,0.073
+Brisbane,wet,Deep learning,0.051
+Alice_Springs,wet,Deep learning,0.046
+Woomera,wet,Deep learning,0.039
+Birdsville,wet,Deep learning,0.049
+Perth,wet,Deep learning,0.033
+Adelaide,wet,Deep learning,0.039
+Hobart,wet,Deep learning,0.048
+Darwin,wet,Hybrid,0.069
+Katherine,wet,Hybrid,0.069
+Broome,wet,Hybrid,0.05
+Cairns,wet,Hybrid,0.116
+Innisfail,wet,Hybrid,0.138
+Tully,wet,Hybrid,0.129
+Brisbane,wet,Hybrid,0.168
+Alice_Springs,wet,Hybrid,0.084
+Woomera,wet,Hybrid,0.097
+Birdsville,wet,Hybrid,0.104
+Perth,wet,Hybrid,0.047
+Adelaide,wet,Hybrid,0.079
+Hobart,wet,Hybrid,0.126
+Darwin,wet,Climatology,0.435
+Katherine,wet,Climatology,0.422
+Broome,wet,Climatology,0.428
+Cairns,wet,Climatology,0.438
+Innisfail,wet,Climatology,0.456
+Tully,wet,Climatology,0.459
+Brisbane,wet,Climatology,0.391
+Alice_Springs,wet,Climatology,0.35
+Woomera,wet,Climatology,0.332
+Birdsville,wet,Climatology,0.321
+Perth,wet,Climatology,0.489
+Adelaide,wet,Climatology,0.419
+Hobart,wet,Climatology,0.406
+Darwin,dry,Statistical (SARIMA),0.203
+Katherine,dry,Statistical (SARIMA),0.207
+Broome,dry,Statistical (SARIMA),0.236
+Cairns,dry,Statistical (SARIMA),0.214
+Innisfail,dry,Statistical (SARIMA),0.21
+Tully,dry,Statistical (SARIMA),0.217
+Brisbane,dry,Statistical (SARIMA),0.233
+Alice_Springs,dry,Statistical (SARIMA),0.282
+Woomera,dry,Statistical (SARIMA),0.333
+Birdsville,dry,Statistical (SARIMA),0.291
+Perth,dry,Statistical (SARIMA),0.309
+Adelaide,dry,Statistical (SARIMA),0.287
+Hobart,dry,Statistical (SARIMA),0.217
+Darwin,dry,Machine learning,0.046
+Katherine,dry,Machine learning,0.052
+Broome,dry,Machine learning,0.071
+Cairns,dry,Machine learning,0.047
+Innisfail,dry,Machine learning,0.062
+Tully,dry,Machine learning,0.054
+Brisbane,dry,Machine learning,0.105
+Alice_Springs,dry,Machine learning,0.107
+Woomera,dry,Machine learning,0.157
+Birdsville,dry,Machine learning,0.12
+Perth,dry,Machine learning,0.155
+Adelaide,dry,Machine learning,0.175
+Hobart,dry,Machine learning,0.229
+Darwin,dry,Deep learning,0.137
+Katherine,dry,Deep learning,0.13
+Broome,dry,Deep learning,0.089
+Cairns,dry,Deep learning,0.142
+Innisfail,dry,Deep learning,0.133
+Tully,dry,Deep learning,0.142
+Brisbane,dry,Deep learning,0.071
+Alice_Springs,dry,Deep learning,0.06
+Woomera,dry,Deep learning,0.041
+Birdsville,dry,Deep learning,0.053
+Perth,dry,Deep learning,0.056
+Adelaide,dry,Deep learning,0.051
+Hobart,dry,Deep learning,0.045
+Darwin,dry,Hybrid,0.075
+Katherine,dry,Hybrid,0.081
+Broome,dry,Hybrid,0.072
+Cairns,dry,Hybrid,0.095
+Innisfail,dry,Hybrid,0.108
+Tully,dry,Hybrid,0.104
+Brisbane,dry,Hybrid,0.143
+Alice_Springs,dry,Hybrid,0.098
+Woomera,dry,Hybrid,0.094
+Birdsville,dry,Hybrid,0.103
+Perth,dry,Hybrid,0.09
+Adelaide,dry,Hybrid,0.111
+Hobart,dry,Hybrid,0.11
+Darwin,dry,Climatology,0.538
+Katherine,dry,Climatology,0.53
+Broome,dry,Climatology,0.532
+Cairns,dry,Climatology,0.502
+Innisfail,dry,Climatology,0.487
+Tully,dry,Climatology,0.483
+Brisbane,dry,Climatology,0.448
+Alice_Springs,dry,Climatology,0.453
+Woomera,dry,Climatology,0.375
+Birdsville,dry,Climatology,0.433
+Perth,dry,Climatology,0.39
+Adelaide,dry,Climatology,0.376
+Hobart,dry,Climatology,0.399

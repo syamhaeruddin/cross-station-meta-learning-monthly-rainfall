@@ -1,0 +1,8 @@
+Diagnostic,gain L-G4 vs NNLS: rho,gain L-G4 vs NNLS: p,gain GG4 vs L-G4: rho,gain GG4 vs L-G4: p,gain GG4 vs Clim-30yr: rho,gain GG4 vs Clim-30yr: p
+error correlation,0.16,0.608,0.18,0.549,0.08,0.802
+ambiguity/MSE,-0.16,0.603,-0.3,0.32,-0.08,0.789
+RMSE oracle/mean,-0.01,0.964,0.25,0.414,-0.03,0.922
+hit rate,0.16,0.609,-0.08,0.795,0.02,0.957
+rho persistence,0.01,0.972,0.34,0.253,0.04,0.908
+R2 AR1 anomaly,-0.27,0.378,-0.04,0.906,-0.12,0.687
+variance explained by climatology,0.14,0.642,0.42,0.155,-0.16,0.59
