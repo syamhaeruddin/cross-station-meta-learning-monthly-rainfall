@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# dataset meta (± 58 MB) disusun ulang oleh notebook dari hasil/model_dasar_*.npz
+hasil/meta_dataset.npz
+# arsip keluaran lama yang dibuat saat melatih ulang
+hasil/arsip_*/
+log/

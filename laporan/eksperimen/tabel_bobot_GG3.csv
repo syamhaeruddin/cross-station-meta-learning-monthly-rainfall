@@ -1,0 +1,131 @@
+Stasiun,Musim,Kelompok,Bobot
+Darwin,basah,Statistik (SARIMA),0.338
+Katherine,basah,Statistik (SARIMA),0.354
+Broome,basah,Statistik (SARIMA),0.373
+Cairns,basah,Statistik (SARIMA),0.281
+Innisfail,basah,Statistik (SARIMA),0.246
+Tully,basah,Statistik (SARIMA),0.266
+Brisbane,basah,Statistik (SARIMA),0.274
+Alice_Springs,basah,Statistik (SARIMA),0.391
+Woomera,basah,Statistik (SARIMA),0.358
+Birdsville,basah,Statistik (SARIMA),0.371
+Perth,basah,Statistik (SARIMA),0.247
+Adelaide,basah,Statistik (SARIMA),0.202
+Hobart,basah,Statistik (SARIMA),0.185
+Darwin,basah,Machine learning,0.089
+Katherine,basah,Machine learning,0.088
+Broome,basah,Machine learning,0.101
+Cairns,basah,Machine learning,0.074
+Innisfail,basah,Machine learning,0.091
+Tully,basah,Machine learning,0.073
+Brisbane,basah,Machine learning,0.116
+Alice_Springs,basah,Machine learning,0.129
+Woomera,basah,Machine learning,0.174
+Birdsville,basah,Machine learning,0.155
+Perth,basah,Machine learning,0.183
+Adelaide,basah,Machine learning,0.262
+Hobart,basah,Machine learning,0.235
+Darwin,basah,Deep learning,0.07
+Katherine,basah,Deep learning,0.066
+Broome,basah,Deep learning,0.047
+Cairns,basah,Deep learning,0.091
+Innisfail,basah,Deep learning,0.068
+Tully,basah,Deep learning,0.073
+Brisbane,basah,Deep learning,0.051
+Alice_Springs,basah,Deep learning,0.046
+Woomera,basah,Deep learning,0.039
+Birdsville,basah,Deep learning,0.049
+Perth,basah,Deep learning,0.033
+Adelaide,basah,Deep learning,0.039
+Hobart,basah,Deep learning,0.048
+Darwin,basah,Hibrida,0.069
+Katherine,basah,Hibrida,0.069
+Broome,basah,Hibrida,0.05
+Cairns,basah,Hibrida,0.116
+Innisfail,basah,Hibrida,0.138
+Tully,basah,Hibrida,0.129
+Brisbane,basah,Hibrida,0.168
+Alice_Springs,basah,Hibrida,0.084
+Woomera,basah,Hibrida,0.097
+Birdsville,basah,Hibrida,0.104
+Perth,basah,Hibrida,0.047
+Adelaide,basah,Hibrida,0.079
+Hobart,basah,Hibrida,0.126
+Darwin,basah,Klimatologi,0.435
+Katherine,basah,Klimatologi,0.422
+Broome,basah,Klimatologi,0.428
+Cairns,basah,Klimatologi,0.438
+Innisfail,basah,Klimatologi,0.456
+Tully,basah,Klimatologi,0.459
+Brisbane,basah,Klimatologi,0.391
+Alice_Springs,basah,Klimatologi,0.35
+Woomera,basah,Klimatologi,0.332
+Birdsville,basah,Klimatologi,0.321
+Perth,basah,Klimatologi,0.489
+Adelaide,basah,Klimatologi,0.419
+Hobart,basah,Klimatologi,0.406
+Darwin,kering,Statistik (SARIMA),0.203
+Katherine,kering,Statistik (SARIMA),0.207
+Broome,kering,Statistik (SARIMA),0.236
+Cairns,kering,Statistik (SARIMA),0.214
+Innisfail,kering,Statistik (SARIMA),0.21
+Tully,kering,Statistik (SARIMA),0.217
+Brisbane,kering,Statistik (SARIMA),0.233
+Alice_Springs,kering,Statistik (SARIMA),0.282
+Woomera,kering,Statistik (SARIMA),0.333
+Birdsville,kering,Statistik (SARIMA),0.291
+Perth,kering,Statistik (SARIMA),0.309
+Adelaide,kering,Statistik (SARIMA),0.287
+Hobart,kering,Statistik (SARIMA),0.217
+Darwin,kering,Machine learning,0.046
+Katherine,kering,Machine learning,0.052
+Broome,kering,Machine learning,0.071
+Cairns,kering,Machine learning,0.047
+Innisfail,kering,Machine learning,0.062
+Tully,kering,Machine learning,0.054
+Brisbane,kering,Machine learning,0.105
+Alice_Springs,kering,Machine learning,0.107
+Woomera,kering,Machine learning,0.157
+Birdsville,kering,Machine learning,0.12
+Perth,kering,Machine learning,0.155
+Adelaide,kering,Machine learning,0.175
+Hobart,kering,Machine learning,0.229
+Darwin,kering,Deep learning,0.137
+Katherine,kering,Deep learning,0.13
+Broome,kering,Deep learning,0.089
+Cairns,kering,Deep learning,0.142
+Innisfail,kering,Deep learning,0.133
+Tully,kering,Deep learning,0.142
+Brisbane,kering,Deep learning,0.071
+Alice_Springs,kering,Deep learning,0.06
+Woomera,kering,Deep learning,0.041
+Birdsville,kering,Deep learning,0.053
+Perth,kering,Deep learning,0.056
+Adelaide,kering,Deep learning,0.051
+Hobart,kering,Deep learning,0.045
+Darwin,kering,Hibrida,0.075
+Katherine,kering,Hibrida,0.081
+Broome,kering,Hibrida,0.072
+Cairns,kering,Hibrida,0.095
+Innisfail,kering,Hibrida,0.108
+Tully,kering,Hibrida,0.104
+Brisbane,kering,Hibrida,0.143
+Alice_Springs,kering,Hibrida,0.098
+Woomera,kering,Hibrida,0.094
+Birdsville,kering,Hibrida,0.103
+Perth,kering,Hibrida,0.09
+Adelaide,kering,Hibrida,0.111
+Hobart,kering,Hibrida,0.11
+Darwin,kering,Klimatologi,0.538
+Katherine,kering,Klimatologi,0.53
+Broome,kering,Klimatologi,0.532
+Cairns,kering,Klimatologi,0.502
+Innisfail,kering,Klimatologi,0.487
+Tully,kering,Klimatologi,0.483
+Brisbane,kering,Klimatologi,0.448
+Alice_Springs,kering,Klimatologi,0.453
+Woomera,kering,Klimatologi,0.375
+Birdsville,kering,Klimatologi,0.433
+Perth,kering,Klimatologi,0.39
+Adelaide,kering,Klimatologi,0.376
+Hobart,kering,Klimatologi,0.399

@@ -1,0 +1,6 @@
+# simpan berkas teks dengan akhir baris LF agar checksum sama di Windows, Linux, dan macOS
+* text=auto eol=lf
+*.npz binary
+*.zip binary
+*.png binary
+*.xlsx binary
