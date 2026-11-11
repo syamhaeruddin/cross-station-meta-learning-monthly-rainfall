@@ -1,6 +1,6 @@
 # Reproduction manifest
 
-Release `ijies-r1`. Every number in the article comes from the files named here.
+Release `ijies-r2`. Every number in the article comes from the files named here.
 Run `python src/run_all.py` to rebuild all of them from the raw records.
 
 ## 1. Splits
@@ -108,18 +108,30 @@ Each file stores predictions with the seed on the first axis.
 Numbering follows the revised (R1) manuscript. Files keep the names of the submitted
 version, so the stored `table2_*` file is R1 Table 3, and so on.
 
-| R1 item | Produced by | Stored as |
+| R2 item | Produced by | Stored as |
 |---|---|---|
 | Table 1, study stations | `src/manuscript_tables_figures.py` | `reports/manuscript/table1_stations.csv` |
 | Table 2, split flow | `src/make_manifest.py` | `this manifest, section 1` |
-| Table 3, mean NSE, RMSE, MAE | `src/evaluate.py, src/evaluate_errors.py` | `reports/manuscript/table2_nse_mean.csv, table4_rmse_mae.csv` |
+| Table 3, average NSE, RMSE, MAE | `src/evaluate.py, src/evaluate_errors.py` | `reports/manuscript/table2_nse_mean.csv, table4_rmse_mae.csv` |
 | Table 4, panel DM, squared error | `src/evaluate.py` | `reports/manuscript/table3_dm_panel.csv` |
 | Table 5, panel DM, absolute error | `src/evaluate_errors.py` | `reports/manuscript/table5_dm_absolute_error.csv` |
-| Table 6, per-station NSE | `src/evaluate.py` | `reports/manuscript/table6_nse_stations.csv` |
+| Table 6, ablations and controls | `src/ablations.py, src/extra_baselines.py` | `results/ablations.json, results/extra_baselines.json` |
+| Table 7, learning curves | `src/ablations.py curve, curve2` | `results/ablations.json, results/pred_curve*_*.npz` |
+| Table 8, transfer by fold | `src/evaluate.py` | `results/evaluation_results.json, results/pred_transfer_*.npz` |
 | Figure 1, workflow | `drawn separately` | `reports/manuscript/figure1_framework.png` |
 | Figure 2, skill by horizon | `src/manuscript_tables_figures.py` | `reports/manuscript/figure2_skill.png` |
-| Figure 3, per-station heatmap | `src/manuscript_tables_figures.py` | `reports/manuscript/figure3_heatmap.png` |
-| Figure 4, learned weights | `src/manuscript_tables_figures.py` | `reports/manuscript/figure4_weights.png` |
+| Figure 3, learned weights | `src/manuscript_tables_figures.py` | `reports/manuscript/figure4_weights.png` |
+
+Two items of the submitted version are no longer tables or figures of the article.
+Section 4.7 reports their content in the text and refers the reader here for the rest:
+
+| Withdrawn from the article | Produced by | Stored as |
+|---|---|---|
+| per-station NSE, formerly Table 6 | `src/evaluate.py` | `reports/manuscript/table6_nse_stations.csv` |
+| per-station MSE reduction heat map | `src/manuscript_tables_figures.py` | `reports/manuscript/figure3_heatmap.png` |
+
+Section 4.8 additionally rests on `results/extra_diagnostics.json` for the bandwidth and
+block-bootstrap checks and on `results/pred_abl_*.npz` for the per-seed ablation predictions.
 
 ## 8. Panel loss series behind each Diebold-Mariano test
 
