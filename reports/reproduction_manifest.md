@@ -54,13 +54,26 @@ target when at least 90 per cent of its days carry a SILO observation code.
 Defined in `src/meta_gate.py` as `FOLDS`. For each fold the gate trains on the other
 twelve stations; the pooled NNLS anchor also uses training stations only.
 
-| Fold | Held-out stations | Prediction file |
-|---|---|---|
-| 0 | Darwin, Brisbane, Woomera | `results/pred_transfer_0.npz` |
-| 1 | Perth, Cairns, Birdsville | `results/pred_transfer_1.npz` |
-| 2 | Tully, Alice Springs, Coffs Harbour | `results/pred_transfer_2.npz` |
-| 3 | Hobart, Katherine, Adelaide | `results/pred_transfer_3.npz` |
-| 4 | Broome, Innisfail, Melbourne | `results/pred_transfer_4.npz` |
+| Fold | Held-out stations | Prediction file | Out-of-fold standardization |
+|---|---|---|---|
+| 0 | Darwin, Brisbane, Woomera | `results/pred_transfer_0.npz` | `results/pred_transfer_of_0.npz` |
+| 1 | Perth, Cairns, Birdsville | `results/pred_transfer_1.npz` | `results/pred_transfer_of_1.npz` |
+| 2 | Tully, Alice Springs, Coffs Harbour | `results/pred_transfer_2.npz` | `results/pred_transfer_of_2.npz` |
+| 3 | Hobart, Katherine, Adelaide | `results/pred_transfer_3.npz` | `results/pred_transfer_of_3.npz` |
+| 4 | Broome, Innisfail, Melbourne | `results/pred_transfer_4.npz` | `results/pred_transfer_of_4.npz` |
+
+In `src/meta_gate.py build` the six static descriptors are standardized once over all
+fifteen stations, so a held-out station contributes to the mean and standard deviation
+used in its own fold, though never a target value. `src/transfer_outfold.py <fold>`
+repeats each fold with that standardization refitted on the twelve training stations
+alone, and `src/evaluate_outfold.py` compares the two without touching
+`results/evaluation_results.json`. The estimates agree: no station-horizon NSE differs
+by more than 0.0001 in either test period, every per-fold and per-horizon mean agrees
+to four decimals, and the panel DM test does not separate the variants (all
+Holm-adjusted p >= 0.69). Section 4.4 of the article reports this check.
+
+    python src/transfer_outfold.py 0      # ... through fold 4
+    python src/evaluate_outfold.py        # -> results/evaluation_outfold.json
 
 ## 5. Forecast origins, target dates and scaling fits
 
@@ -102,6 +115,8 @@ Each file stores predictions with the seed on the first axis.
 | `results/pred_transfer_2.npz` | GG4-T on the held-out stations of fold 2 |
 | `results/pred_transfer_3.npz` | GG4-T on the held-out stations of fold 3 |
 | `results/pred_transfer_4.npz` | GG4-T on the held-out stations of fold 4 |
+| `results/pred_transfer_of_<f>.npz` | GG4-T with the static standardization refitted on the twelve training stations of fold `f` |
+| `results/evaluation_outfold.json` | comparison of the two transfer variants, written by `src/evaluate_outfold.py` |
 
 ## 7. Tables and figures of the article
 
@@ -118,6 +133,7 @@ version, so the stored `table2_*` file is R1 Table 3, and so on.
 | Table 6, ablations and controls | `src/ablations.py, src/extra_baselines.py` | `results/ablations.json, results/extra_baselines.json` |
 | Table 7, learning curves | `src/ablations.py curve, curve2` | `results/ablations.json, results/pred_curve*_*.npz` |
 | Table 8, transfer by fold | `src/evaluate.py` | `results/evaluation_results.json, results/pred_transfer_*.npz` |
+| Section 4.4, out-of-fold standardization check | `src/transfer_outfold.py, src/evaluate_outfold.py` | `results/evaluation_outfold.json, results/pred_transfer_of_*.npz` |
 | Figure 1, workflow | `drawn separately` | `reports/manuscript/figure1_framework.png` |
 | Figure 2, skill by horizon | `src/manuscript_tables_figures.py` | `reports/manuscript/figure2_skill.png` |
 | Figure 3, learned weights | `src/manuscript_tables_figures.py` | `reports/manuscript/figure4_weights.png` |
